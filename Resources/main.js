@@ -3,6 +3,17 @@ let player = true
 // Registra as jogadas
 let moves = [[], [], [], [], [], [], [], [], []]
 
+let a1 = moves[0]
+let a2 = moves[1]
+let a3 = moves[2]
+let b1 = moves[3]
+let b2 = moves[4]
+let b3 = moves[5]
+let c1 = moves[6]
+let c2 = moves[7]
+let c3 = moves[8]
+
+
 function play(square, place) {
 
     if (moves[square] == '') {
@@ -29,12 +40,20 @@ function play(square, place) {
         document.getElementById("error").style.display = "block"
     }
 
+    winCondition()
+
+}
+
+function winCondition() {
+
+    if (a1[0] == a2[0] && a1[0] == a3[0] && a1[0] != '') {
+        console.log('YOU WIN')
+    }
 }
 
 
 // CONDIÇOES PARA WIN
 
-// 
 
 /* OKKK
 JOGADOR1 CLICA
