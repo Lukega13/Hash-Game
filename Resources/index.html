@@ -10,7 +10,22 @@
 
 <body>
 
-    <div id="container">
+    <div id="menu-container">
+
+        <div id="logo"></div>
+
+        <div id="menu-buttons">
+            <button id="play-button" onclick="start()">Play</button>
+            <button id="instructions-button" onclick="showInstructions()">Instructions</button>
+        </div>
+
+        <div id="footer-menu">
+            <h1>Developed by <a>Lukega13</a></h1>
+        </div>
+    </div>
+
+
+    <div id="container" style="display: none;">
 
         <span id="player-turn">
             <h1>Vez do jogador X</h1>
@@ -40,6 +55,19 @@
 
         <div id="error">
             <h1>Esta casa não está disponível!</h1>
+        </div>
+
+    </div>
+
+    <div id="win-container" style="display: none;">
+
+        <div id="win-title">
+            <h1></h1>
+        </div>
+
+        <div id="win-buttons">
+            <button id="restart-button" onclick="restart()">Restart</button>
+            <button id="back-menu-button" onclick="backMenu()">Menu</button>
         </div>
 
     </div>

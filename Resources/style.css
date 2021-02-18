@@ -23,10 +23,99 @@ body {
     width: 100%;
 }
 
+#menu-container {
+    height: 512px;
+    width: 450px;
+    position: fixed;
+    display: block;
+    z-index: 10;
+}
+
+#logo {
+    width: 100%;
+    height: 60%;
+    background-image: url(../img/jogo-da-velha.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#menu-buttons {
+    width: 100%;
+    height: 36%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #fdce96;
+}
+
+#play-button {
+    width: 40%;
+    height: 30%;
+    color: #583b3b;
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f5942d;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#play-button:active,
+#play-button:focus {
+    outline: none;
+}
+
+#instructions-button {
+    width: 40%;
+    height: 30%;
+    color: #583b3b;
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f5942d;
+    border: none;
+    cursor: pointer;
+}
+
+#instructions-button:active,
+#instructions-button:focus {
+    outline: none;
+}
+
+#footer-menu {
+    width: 100%;
+    height: 4%;
+    background-color: #d36135;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+#footer-menu h1 {
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    margin: 0;
+    cursor: default;
+}
+
+#footer-menu h1 a {
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 #container {
+    position: fixed;
     display: flex;
     align-items: center;
     flex-direction: column;
+    z-index: 10;
 }
 
 #player-turn {
@@ -72,11 +161,78 @@ body {
 }
 
 .Xplayed {
-background-image: none;
-background-color: blue;
+background-image: url(../img/x.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100%;
 }
 
 .Oplayed {
     background-image: none;
     background-color: red;
+}
+
+#win-container {
+    height: 480px;
+    width: 450px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+#win-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+}
+#win-container h1 {
+    font-size: 28px;
+    color: #cc643b;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#win-buttons {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#restart-button {
+    width: 40%;
+    height: 30%;
+    color: #583b3b;
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f5942d;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+#back-menu-button {
+    width: 40%;
+    height: 30%;
+    color: #583b3b;
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f5942d;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+#restart-button:active,
+#restart-button:focus, 
+#back-menu-button:active,
+#back-menu-button:focus {
+    outline: none;
 }
