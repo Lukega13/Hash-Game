@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <span id="player-turn">
+            <h1>Vez do jogador X</h1>
+        </span>
+
+        <main id="board">
+
+            <div id="row1" class="rows">
+                <div id="a1" onclick="play(0, 'a1')"></div>
+                <div id="a2" onclick="play(1, 'a2')"></div>
+                <div id="a3" onclick="play(2, 'a3')"></div>
+            </div>
+
+            <div id="row2" class="rows">
+                <div id="b1" onclick="play(3, 'b1')"></div>
+                <div id="b2" onclick="play(4, 'b2')"></div>
+                <div id="b3" onclick="play(5, 'b3')"></div>
+            </div>
+
+            <div id="row3" class="rows">
+                <div id="c1" onclick="play(6, 'c1')"></div>
+                <div id="c2" onclick="play(7, 'c2')"></div>
+                <div id="c3" onclick="play(8, 'c3')"></div>
+            </div>
+
+        </main>
+
+        <div id="error">
+            <h1>Esta casa não está disponível!</h1>
+        </div>
+
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
