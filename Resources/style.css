@@ -226,15 +226,17 @@ body {
 }
 
 .Xplayed {
-    background-image: url(../img/x.jpg);
+    background-image: url(../img/x.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 90% 90%;
+    background-position: center;
 }
 
 .Oplayed {
     background-image: url(../img/circle.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 90% 90%;
+    background-position: center;
 }
 
 #win-container {
