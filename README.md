@@ -1,4 +1,4 @@
-<h2 align="center"> The hash game, in JavaScript!
+<h2 align="center"> The hash game, in JavaScript!</h2>
  
 <p align="center">
 <a hred="https://github.com/Lukega13/Hash-Game">
@@ -19,5 +19,5 @@
 <br/>
 
 <p align="center">
-<img height="400px" src="/img/626d414f0257490b8567e43f963532ae12_41_02.gif" />
+<img height="400px" src="/img/0d9eff549b5847f2abbfdd9c97edd1b112_59_32.gif" />
 </p>
