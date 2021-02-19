@@ -110,6 +110,71 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
+#instructions-board {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    height: 512px;
+    width: 450px;
+    background-color: #ffdcb3;
+    z-index: 10;
+}
+
+#instructions-header {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
+
+#instructions-header h1 {
+    color: #f5942d;
+    font-size: 26px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#instructions-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#instructions-text h1 {
+    text-align: center;
+    color: #97611f;
+    margin: 15px 0 0 0;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#instructions-back-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#instructions-back-button button {
+    width: 45%;
+    height: 55px;
+    color: #583b3b;
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f5942d;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#instructions-back-button button:active,
+#instructions-back-button button:focus {
+    outline: none;
+}
+
 #container {
     position: fixed;
     display: flex;
