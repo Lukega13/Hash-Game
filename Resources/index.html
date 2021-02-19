@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo da Velha</title>
+    <title>Hash Game</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 
@@ -36,6 +36,7 @@
             <h1>First one places "X"s and the Second one places "O"s</h1>
             <h1>The player who first manages to form a line with 3 identical symbols wins, whether horizontally,
                 vertically or diagonally.</h1>
+            <h1>If all squares are filled and nobody wins, the game is a draw</h1>
         </div>
 
         <div id="instructions-back-button">
@@ -46,7 +47,7 @@
     <div id="container" style="display: none;">
 
         <span id="player-turn">
-            <h1>Vez do jogador X</h1>
+            <h1>Turn of Player 1</h1>
         </span>
 
         <main id="board">
@@ -72,7 +73,7 @@
         </main>
 
         <div id="error">
-            <h1>Esta casa não está disponível!</h1>
+            <h1>This square is no available!</h1>
         </div>
 
     </div>

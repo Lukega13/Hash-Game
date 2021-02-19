@@ -25,13 +25,13 @@ function play(square, place) {
             moves[square].push('x')
 
             document.getElementById(place).classList.add("Xplayed")
-            document.querySelector("#player-turn h1").innerHTML = "Vez do jogador O"
+            document.querySelector("#player-turn h1").innerHTML = "Turn of Player 2"
 
         } else {
             moves[square].push('o')
 
             document.getElementById(place).classList.add("Oplayed")
-            document.querySelector("#player-turn h1").innerHTML = "Vez do jogador X"
+            document.querySelector("#player-turn h1").innerHTML = "Turn of Player 1"
 
         }
 
@@ -43,7 +43,7 @@ function play(square, place) {
     }
 
     // Win Conditions
-
+    console.log(a1[0])
     if ((a1[0] == a2[0] && a1[0] == a3[0] && a1[0] != '') || (a1[0] == b1[0] && a1[0] == c1[0] && a1[0] != '')
         || a1[0] == b2[0] && a1[0] == c3[0] && a1[0] != '') {
 
@@ -58,6 +58,9 @@ function play(square, place) {
 
         vencedor = c3[0]
 
+    } else if (a1[0] != undefined && a2[0] != undefined && a3[0] != undefined && b1[0] != undefined && b2[0] != undefined && b3[0] != undefined && c1[0] != undefined && c2[0] != undefined && c3[0] != undefined && vencedor != 'x' && vencedor != 'o') {
+
+        vencedor = 'velha'
     }
 
     if (vencedor == 'x') {
@@ -72,6 +75,11 @@ function play(square, place) {
         document.querySelector("#win-container h1").innerHTML = "Player 2 Wins!"
         document.querySelector("#player-turn h1").style.display = "none"
 
+    } if (vencedor == 'velha') {
+
+        document.querySelector("#win-container").style.display = "flex"
+        document.querySelector("#win-container h1").innerHTML = "The game is a draw!"
+        document.querySelector("#player-turn h1").style.display = "none"
     }
 
 }
@@ -108,17 +116,14 @@ function restart() {
 
     for (i = 1; i < 4; i++) {
 
-        document.getElementById('a' + i).classList.remove("Oplayed")
-        document.getElementById('b' + i).classList.remove("Oplayed")
-        document.getElementById('c' + i).classList.remove("Oplayed")
-        document.getElementById('a' + i).classList.remove("Xplayed")
-        document.getElementById('b' + i).classList.remove("Xplayed")
-        document.getElementById('c' + i).classList.remove("Xplayed")
+        document.getElementById('a' + i).classList.remove("Oplayed", "Xplayed")
+        document.getElementById('b' + i).classList.remove("Oplayed", "Xplayed")
+        document.getElementById('c' + i).classList.remove("Oplayed", "Xplayed")
 
     }
 
     document.querySelector("#player-turn h1").style.display = "block"
-    document.querySelector("#player-turn h1").innerHTML = "Vez do jogador X"
+    document.querySelector("#player-turn h1").innerHTML = "Turn of Player 1"
 
 }
 
